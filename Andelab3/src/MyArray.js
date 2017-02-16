@@ -21,22 +21,27 @@ function MyArray(){
     }
     return thousands;
   };
-  const result = {};
-  this.count = -1;
+
+
   Array.prototype.search = function(target){
-    //var low = 0;
-    //var high = this.length - 1;
-    //var found = false;
-    var counter= 0;
-    var index = -1;
-    result.count = 0;
-    result.length = this.length;
-    
-    let low = 0;
-    let high = this.length - 1;
+
+  const result = {};
+  result.count = 0;
+  result.index = -1;
+  result.length = this.length;
   
-    while (low <= high) {
-        const mid = Math.round((low + high) / 2);
+  var counter= 0;
+    
+  let low = 0;
+  let high = this.length - 1;
+
+  if(target === this[this.length-1]){
+    result.index = this.length - 1;
+    return result;
+  }
+
+  while (low <= high) {
+        const mid = Math.floor((low + high) / 2);
         const guess = this[mid];
   
         if (guess === target) {
