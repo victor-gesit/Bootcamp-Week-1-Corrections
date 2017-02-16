@@ -35,6 +35,7 @@ function MyArray(){
   let low = 0;
   let high = this.length - 1;
 
+  // Make exception for the end of the array, for efficiency
   if(target === this[this.length-1]){
     result.index = this.length - 1;
     return result;

@@ -15,7 +15,7 @@ function FindMissing(){
 		return missing;
 		
 	}
-	// binarySearch is modified to return the item if it's not found in the specified array.
+	// binarySearch is modified to return the item if it's found in the specified array.
 
 	function binarySearch(list, item) {
    		let low = 0;
@@ -34,28 +34,7 @@ function FindMissing(){
        			low = mid + 1;
     		}
    		}
- 
+   		// Return null if it's not found
    		return null;
  	}
-	/*
-	function binarySearch(sortedArray,target){
-	    var min = 0;
-	    var max = sortedArray.length - 1;
-	    var found = false;
-	    while(!found){
-	      if(min > max){
-	        return target;
-	      }
-	      var mid = Math.floor((min+max)/2);
-	      if(sortedArray[mid] < target){
-	        min = mid+1;
-	      } else if(sortedArray[mid] > target){
-	        max = mid-1;
-	      } else {
-	        found = true;
-	        break;
-	      }
-	  }
-	}
-	*/
 }
