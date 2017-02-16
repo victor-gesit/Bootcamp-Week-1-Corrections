@@ -1,0 +1,25 @@
+{
+  "name": "bootcamp-week-1-corrections",
+  "version": "1.0.0",
+  "description": "Corrections for Bootcamp Week 1, Rework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor4l/Bootcamp-Week-1-Corrections.git"
+  },
+  "keywords": [
+    "Corrections",
+    "Week",
+    "1",
+    "Bootcamp"
+  ],
+  "author": "Victor Idongesit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor4l/Bootcamp-Week-1-Corrections/issues"
+  },
+  "homepage": "https://github.com/victor4l/Bootcamp-Week-1-Corrections#readme"
+}
